@@ -1,0 +1,119 @@
+@import '../variables';
+.report{
+    &-item{
+        min-height: 500px;
+    }
+    &-info{
+        display: flex;
+        margin: 25px 0 35px 0;
+        &-details{
+            width: 65%;
+            display: flex;
+        }
+        &-image{
+            max-width: 175px;
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        &-chart{
+            width: 35%;
+        }
+        &-block{
+            width: 100%;
+            &-date{
+                span{
+                    color: gray;
+                }
+            }
+            &-schedule{
+                width: 100%;
+                .schedule-item{
+                    width: 100%;
+                    display: flex;
+                    margin: 5px 0;
+                    align-items: center;
+                    justify-content: space-between;
+                    &-progress{
+                        position: relative;
+                        width: 100%;
+                        max-width: 200px;
+                        height: 12px;
+                        background-color: #e3e3e3;
+                        border-radius: 20px;
+                        &-line{
+                            position: absolute;
+                            height: 12px;
+                            border-radius: 20px;
+                            &--green{
+                                background-color: $site-ok;
+                            }
+                            &--orange{
+                                background-color: $site-middle;
+                            }
+                            &--red{
+                                background-color: $site-bad;
+                            }
+                        }
+                    }
+                    &-status{
+                        font-size: 16px;
+                        font-weight: 500;
+                        max-width: 78px;
+                        width: 100%;
+                        span{
+                            color: gray;
+                        }
+                    }
+                    &-icon{
+                        width: 20px;
+                        height: 20px;
+                        text-align: center;
+                        font-size: 13px;
+                        margin-right: 5px;
+                        border-radius: 50%;
+                        &--green{
+                            background-color: $site-ok;
+                        }
+                        &--orange{
+                            background-color: $site-middle;
+                        }
+                        &--red{
+                            background-color: $site-bad;
+                        }
+                        i{
+                            color: $white;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sidebar{
+    height: 100%;
+    position: relative;
+    width: 100%;
+    padding-top: 25px;
+    &-list{
+        position: sticky;
+        top: 0;
+        &_item{
+            a{
+                cursor: pointer;
+                text-decoration: none;
+                &:hover{
+                    color: $site-color-hover;
+                }
+            }
+            
+        }
+    }
+}

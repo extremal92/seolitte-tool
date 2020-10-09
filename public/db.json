@@ -1,0 +1,84 @@
+{
+
+  "chart":{
+    "options": {
+      "chart": {
+        "width": 300,
+        "type": "donut"
+      },
+      "plotOptions": {
+        "pie": {
+          "startAngle": 0
+        }
+      },
+      "dataLabels": {
+        "enabled": true
+      },
+      "fill": {
+        "type": "gradient"
+      },
+      "labels": ["test1", "test2", "test3"],
+      "title": {
+        "text": "Site Title"
+      },
+      "legend": {
+        "position": "right"
+      },
+      "tooltip": {
+        "marker": {
+          "color": ["#232323"]
+        }
+      },
+      "responsive": [{
+        "breakpoint": 480,
+        "options": {
+          "chart": {
+            "width": 200
+          },
+          "legend": {
+            "position": "bottom"
+          }
+        }
+      }]
+    },
+    "series": [45, 20, 65]
+  },
+  "person":[
+    {
+      "name": "Test Test",
+      "idnp": "2007002003324",
+      "phone": "69967996",
+      "card": "2019 3828 2323 4477",
+      "date": "14:45 12/11/18"
+    },
+    {
+      "name": "Test Djoe",
+      "idnp": "2006001003324",
+      "phone": "69967996",
+      "card": "2029 3850 2323 4477",
+      "date": "12:00 11/06/18"
+    },
+    {
+      "name": "Jon Van",
+      "idnp": "1003006026324",
+      "phone": "79797997",
+      "card": "2019 3830 2323 7477",
+      "date": "14:45 10/12/18"
+    },
+    {
+      "name": "Roman Romanov",
+      "idnp": "2007002003324",
+      "phone": "69967996",
+      "card": "2019 5820 2323 4477",
+      "date": "14:45 12/12/18"
+    },
+    {
+      "name": "Ivan Ivanov",
+      "idnp": "2007002003324",
+      "phone": "69967996",
+      "card": "2019 3820 2423 4477",
+      "date": "14:45 12/12/18"
+    }
+  ]
+}
+

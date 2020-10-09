@@ -1,0 +1,30 @@
+@import './variables';
+@import './libs/normalize';
+@import './components/header';
+@import './pages/activity-report';
+@import './pages/home';
+
+
+.page-title{
+    width: 100%;
+    padding: 25px 0;
+}
+.page-title-center{
+    width: 100%;
+    padding: 25px 0;
+    text-align: center;
+}
+.page-sub-title{
+    width: 100%;
+    padding: 0 0 25px 0;
+}
+
+
+.slickslider-item{
+    width: 100%;
+    background-color: red;
+    color: black;
+    h3{
+        color: black;
+    }
+}

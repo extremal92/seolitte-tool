@@ -1,0 +1,68 @@
+.header {
+  height: 70px;
+  box-shadow: 0px 0px 12px 5px rgba(91, 172, 162, 0.76);
+}
+
+.header-main {
+  display: flex;
+  align-items: center;
+  height: 66px;
+}
+
+.header-logo {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-logo img {
+  height: 65px;
+}
+
+.header .navList {
+  display: flex;
+  margin: 0;
+}
+
+.header .navList-item {
+  padding: 0 15px;
+}
+
+.header .navList-item-link {
+  text-decoration: none;
+}
+
+.header .navList-item-link span {
+  transition: ease-in-out .4s;
+  color: #232323;
+}
+
+.header .navList-item-link:hover span {
+  color: #56ada1;
+}
+
+.header .navList-popup .navList-item-link span {
+  color: #232323;
+}
+
+.header .navList-popup .navList-item-link:hover span {
+  color: #56ada1;
+}
+
+.header .navList .dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.header .navList .dropdown-menu {
+  margin: 0 !important;
+}
+
+.header .navList .dropdown-item.active, .header .navList .dropdown-item:active {
+  background-color: #f8f9fa !important;
+}
+
+.header .navList .dropdown-toggle::after {
+  color: #232323;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}

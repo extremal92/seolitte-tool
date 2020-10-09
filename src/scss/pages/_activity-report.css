@@ -1,0 +1,135 @@
+.report-item {
+  min-height: 500px;
+}
+
+.report-info {
+  display: flex;
+  margin: 25px 0 35px 0;
+}
+
+.report-info-details {
+  width: 65%;
+  display: flex;
+}
+
+.report-info-image {
+  max-width: 175px;
+  width: 100%;
+}
+
+.report-info-image img {
+  width: 100%;
+}
+
+.report-info-chart {
+  width: 35%;
+}
+
+.report-info-block {
+  width: 100%;
+}
+
+.report-info-block-date span {
+  color: gray;
+}
+
+.report-info-block-schedule {
+  width: 100%;
+}
+
+.report-info-block-schedule .schedule-item {
+  width: 100%;
+  display: flex;
+  margin: 5px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.report-info-block-schedule .schedule-item-progress {
+  position: relative;
+  width: 100%;
+  max-width: 200px;
+  height: 12px;
+  background-color: #e3e3e3;
+  border-radius: 20px;
+}
+
+.report-info-block-schedule .schedule-item-progress-line {
+  position: absolute;
+  height: 12px;
+  border-radius: 20px;
+}
+
+.report-info-block-schedule .schedule-item-progress-line--green {
+  background-color: #52b94f;
+}
+
+.report-info-block-schedule .schedule-item-progress-line--orange {
+  background-color: #f1b41c;
+}
+
+.report-info-block-schedule .schedule-item-progress-line--red {
+  background-color: #ff0000;
+}
+
+.report-info-block-schedule .schedule-item-status {
+  font-size: 16px;
+  font-weight: 500;
+  max-width: 78px;
+  width: 100%;
+}
+
+.report-info-block-schedule .schedule-item-status span {
+  color: gray;
+}
+
+.report-info-block-schedule .schedule-item-icon {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  font-size: 13px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+.report-info-block-schedule .schedule-item-icon--green {
+  background-color: #52b94f;
+}
+
+.report-info-block-schedule .schedule-item-icon--orange {
+  background-color: #f1b41c;
+}
+
+.report-info-block-schedule .schedule-item-icon--red {
+  background-color: #ff0000;
+}
+
+.report-info-block-schedule .schedule-item-icon i {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  padding-top: 25px;
+}
+
+.sidebar-list {
+  position: sticky;
+  top: 0;
+}
+
+.sidebar-list_item a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.sidebar-list_item a:hover {
+  color: red;
+}
