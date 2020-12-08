@@ -16,8 +16,7 @@ function Support() {
   
     React.useEffect(() => {
       dispatch(fetchPerson());
-    }, []);
-    // console.log(newItems)
+    }, [dispatch]);
 
     return (
         <div className="suport">

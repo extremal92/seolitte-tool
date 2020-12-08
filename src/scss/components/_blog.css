@@ -1,0 +1,72 @@
+.blog {
+  padding: 40px 0;
+}
+
+@media (max-width: 767px) {
+  .blog {
+    padding: 0 0 40px 0;
+  }
+}
+
+.blog-item {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.blog-item a {
+  text-decoration: none;
+  outline: none;
+}
+
+.blog-item-title {
+  height: 70px;
+}
+
+.blog-item-image {
+  width: 100%;
+  height: 175px;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.blog-item-image-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog-item-info {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.blog-item-info span {
+  padding-right: 10px;
+}
+
+.blog-item-info-link {
+  color: #224075;
+}
+
+.blog-item-info-link:hover {
+  color: #56ada1;
+}
+
+.blog .slick-prev:before, .blog .slick-next:before {
+  color: #224075;
+}
+
+.blog .slick-dots li button:before {
+  font-size: 8px;
+}
+
+.blog .slick-dots li.slick-active button:before {
+  color: #56ada1;
+}
+
+.blog .slick-dots li button:hover:before,
+.blog .slick-dots li button:focus:before {
+  color: #56ada1;
+}

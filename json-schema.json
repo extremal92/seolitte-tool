@@ -1,0 +1,23 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "NewsArticle",
+  "headline": "Test JSON Schema Seolitte",
+  "datePublished": "2020-11-05",
+  "description": "Test-Description-JSON-Schema-Seolitte.",
+  "image": {
+    "@type": "ImageObject",
+    "height": "850",
+    "width": "450",
+    "url": "https://multichannelmerchant.com/wp-content/uploads/2018/02/seoimage.jpg"
+  },
+  "author": "RRoman",
+  "publisher": {
+    "@type": "Organization",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://seolitte.com/wp-content/uploads/2017/09/logo-seo-seolitte-1-2_0-1.png"
+    },
+    "name": "RRoman"
+  },
+  "articleBody": "TestArticleBody"
+}

@@ -12,7 +12,7 @@ const person = (state = initialState, action) => {
     
             }
         default:
-            return state;
+            return {...state};
     }
 }
 

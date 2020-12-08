@@ -7,6 +7,7 @@ import ReactApexChart from 'react-apexcharts'
 import { fetchChart } from '../redux/actions/chart';
 
 import imgOG from '../assets/img/pngwing.png';
+import { Breadcrumbs, MetaTags } from '../components';
 
 
 configureAnchors({ offset: -15, scrollDuration: 800});
@@ -33,17 +34,26 @@ function ActivityReport() {
 
     React.useEffect(() => {
         dispatch(fetchChart());
-    }, []);
+    }, [dispatch]);
 
     const { options, series } = items;
 
     return (
         <div className='container'>
+            <MetaTags 
+                title={'SeoLitte ActivityReport'}
+                description={'Seolitte Page Description ActivityReport'}
+                canonical={'https://seolitte.com/'}
+                googleName={'Google Name Seolitte ActivityReport Page'}
+                googleDesc={'Google Description Seolitte ActivityReport Page.'}
+                fbOgUrl={'https://seolitte.com'}
+                fbOgTitle={'Facebook Title Seolitte ActivityReport Page'}
+                fbOgDesc={'Facebook Description Seolitte ActivityReport Page'}
+                fbOgImg={'https://seolitte.com/static/logo.png'}
+            />
+            <Breadcrumbs/>
             <div className='row report'>
                 <div className='col-9 report-main'>
-                    <div className='page-title'>
-                        <h1>SEO Activity Report</h1>
-                    </div>
                     <div className='report-info'>
                         <div className='report-info-details'>
                             <div className='report-info-image'>

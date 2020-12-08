@@ -1,8 +1,22 @@
 @import './variables';
 @import './libs/normalize';
+//Components
 @import './components/header';
+@import './components/cabinet';
+@import './components/breadcrumbs';
+@import './components/sidebar';
+@import './components/start';
+@import './components/tab';
+@import './components/iframeBlock';
+@import './components/features';
+@import './components/join';
+@import './components/blog';
+@import './components/subscribe';
+
+//Pages
 @import './pages/activity-report';
 @import './pages/home';
+
 
 
 .page-title{
@@ -20,11 +34,50 @@
 }
 
 
-.slickslider-item{
-    width: 100%;
-    background-color: red;
-    color: black;
-    h3{
-        color: black;
+.rounded {
+  counter-reset: li; 
+  list-style: none; 
+  padding: 0;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  li{
+      margin-left: 1.4em;
+  }
+}
+.rounded span {
+  position: relative;
+  display: block;
+  padding: .4em .4em .4em 2em;
+  margin: .5em 0;
+  background: #DAD2CA;
+  color: #444;
+  text-decoration: none;
+  border-radius: .3em;
+  transition: .3s ease-out;
+}
+.rounded span:hover {background: #E9E4E0;}
+.rounded span:hover:before {transform: rotate(360deg);}
+.rounded span:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: -1.3em;
+  top: 50%;
+  margin-top: -1.4em;
+  background: $site-color-hover;
+  height: 2.8em;
+  width: 2.8em;
+  line-height: 2.3em;
+  border: .3em solid white;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 2em;
+  transition: all .3s ease-out;
+}
+.table{
+    border-radius: 4px;
+    thead{
+        th{
+            border-top: none;
+        }
     }
 }

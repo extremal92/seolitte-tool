@@ -1,0 +1,115 @@
+{
+  "promo" : [
+    {
+      "id" : "1",
+      "tabTitle": "SEO",
+      "tabTitleImg": "https://svgshare.com/i/QbA.svg",
+      "tabContentImg": "https://cdn.semrush.com/static/index/tools-new/seo.96eee7c64515.png",
+      "tabContentTitle": "Complete workflow for any SEO professional",
+      "tabContent": "<li><i className='fa fa-check' aria-hidden='true'></i> Run a technical SEO audit on any site</li><li><i className='fa fa-check' aria-hidden='true'></i> Track your daily rankings</li><li><i className='fa fa-check' aria-hidden='true'></i> Analyze any competitor’s SEO strategy</li><li><i className='fa fa-check' aria-hidden='true'></i> Analyze any domain’s backlink profile</li><li><i className='fa fa-check' aria-hidden='true'></i> Research millions of keyword ideas</li><li><i className='fa fa-check' aria-hidden='true'></i> Gather SEO ideas for gaining more organic traffic</li><li><i className='fa fa-check' aria-hidden='true'></i> Unlock your ‘not provided’ keywords</li><li><i className='fa fa-check' aria-hidden='true'></i> new item</li>"
+    }
+  ],
+  "mainVideo" : [
+    {
+      "title": "Digital Marketing Agencies",
+      "link": "https://"
+    }
+  ],
+  "features" : [
+    {
+      "id" : "1",
+      "featuresTitle": "Digital Marketing Agencies",
+      "featuresDesc": "Digital Marketing Agencies",
+      "featuresImg": "https://svgshare.com/i/QbA.svg",
+      "featuresLink": "https://"
+    }
+  ],
+  "blog" : [
+    {
+      "id" : "1",
+      "title": "Watch weekly SEO tutorials",
+      "img": "https://insoft-im.com/wp-content/uploads/2017/10/seo.jpg",
+      "desc": "What is SEO and How Does it Work?",
+      "link": "/",
+      "btnTitle": "Watch →"
+    }
+  ],
+  "pages":[
+    {
+      "id": "",
+      "pageTitle": "About Us",
+      "pageLink": "about-us",
+      "title": "SeoLitte AboutUs",
+      "description": "Seolitte Page Description AboutUs",
+      "canonica": "https://seolitte.com/",
+      "googleName": "Google Name Seolitte AboutUs Page",
+      "googleDesc": "Google Description Seolitte AboutUs Page.",
+      "fbOgUrl": "https://seolitte.com",
+      "fbOgTitle": "Facebook Title Seolitte AboutUs Page",
+      "fbOgDesc": "Facebook Description Seolitte AboutUs Page",
+      "fbOgImg": "https://seolitte.com/static/logo.png",
+      "pageContent": "<h1>h1. Page heading</h1> <h2>h2. Page heading</h2> <h3>h3. Page heading</h3> <h4>h4. Page heading</h4> <h5>h5. Page heading</h5> <h6>h6. Page heading</h6> <h3> Fancy display heading <small class='text-muted'>With faded secondary text</small> </h3> <h1 class='display-1'>Display 1</h1> <h1 class='display-2'>Display 2</h1> <h1 class='display-3'>Display 3</h1> <h1 class='display-4'>Display 4</h1> <p class='lead'> Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus. </p> <p>You can use the mark tag to <mark>highlight</mark> text.</p> <p><del>This line of text is meant to be treated as deleted text.</del></p> <p><s>This line of text is meant to be treated as no longer accurate.</s></p> <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p> <p><u>This line of text will render as underlined</u></p> <p><small>This line of text is meant to be treated as fine print.</small></p> <p><strong>This line rendered as bold text.</strong></p> <p><em>This line rendered as italicized text.</em></p> <ol class='rounded col-6'> <li> <span>List item </span> </li> <li> <span>List item </span> </li> <li> <span>List item </span> </li> <li> <span>List item </span> </li> <li> <span>List item </span> </li> </ol> <table class='table table-hover table-dark'> <thead> <tr> <th>Row</th> <th>First Name</th> <th>Last Name</th> <th>Email</th> </tr> </thead> <tbody> <tr> <td>1</td> <td>Clark</td> <td>Kent</td> <td>clarkkent@mail.com</td> </tr> <tr> <td>2</td> <td>John</td> <td>Carter</td> <td>johncarter@mail.com</td> </tr> <tr> <td>3</td> <td>Peter</td> <td>Parker</td> <td>peterparker@mail.com</td> </tr> </tbody> </table>"
+    }
+  ],
+  "users":[
+    {
+      "id": "",
+      "firstName": "firstName Test",
+      "lastName": "lastName Test",
+      "email": "2007002003324",
+      "login": "test",
+      "password": "12345"
+    }
+  ],
+  "subscribe":[
+    {
+      "email": "2007002003324",
+      "name": "test",
+      "phone": 12345
+    }
+  ],
+  "chart":{
+    "options": {
+      "chart": {
+        "width": 300,
+        "type": "donut"
+      },
+      "plotOptions": {
+        "pie": {
+          "startAngle": 0
+        }
+      },
+      "dataLabels": {
+        "enabled": true
+      },
+      "fill": {
+        "type": "gradient"
+      },
+      "labels": ["test1", "test2", "test3"],
+      "title": {
+        "text": "Site Title"
+      },
+      "legend": {
+        "position": "right"
+      },
+      "tooltip": {
+        "marker": {
+          "color": ["#232323"]
+        }
+      },
+      "responsive": [{
+        "breakpoint": 480,
+        "options": {
+          "chart": {
+            "width": 200
+          },
+          "legend": {
+            "position": "bottom"
+          }
+        }
+      }]
+    },
+    "series": [45, 20, 65]
+  }
+}
+

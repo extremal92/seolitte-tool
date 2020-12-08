@@ -1,0 +1,72 @@
+.join {
+  padding: 100px 0;
+}
+
+@media (max-width: 991px) {
+  .join {
+    padding: 65px 0;
+  }
+}
+
+.join-text {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+@media (max-width: 767px) {
+  .join-text {
+    flex-wrap: wrap;
+  }
+}
+
+.join-text span {
+  color: #fff;
+  font-size: 32px;
+  line-height: 37px;
+  font-weight: 400;
+}
+
+@media (max-width: 767px) {
+  .join-text span {
+    text-align: center;
+  }
+}
+
+.join-text-number {
+  padding: 0 10px;
+}
+
+@media (max-width: 767px) {
+  .join-text-number {
+    width: 100%;
+  }
+}
+
+.join-button {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.join-button button {
+  background: #224075;
+  border-color: #224075;
+  height: 45px;
+  width: 145px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: ease-in-out .3s;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.join-button button:hover {
+  background: #fff;
+  border-color: #224075;
+  color: #224075;
+}
+
+.join-bg {
+  background-color: #5BACA2;
+}

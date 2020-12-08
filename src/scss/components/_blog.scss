@@ -1,0 +1,58 @@
+@import '../variables';
+
+.blog{
+    padding: 40px 0;
+    @include md-min {   
+        padding: 0 0 40px 0;
+    }
+    &-item{
+        width: 100%;
+        padding: 0 15px;
+        a{
+            text-decoration: none;
+            outline: none;
+        }
+        &-title{
+            height: 70px;
+        }
+        &-image{
+            width: 100%;
+            height: 175px;
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+            &-img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &-info{
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: 500;
+            span{
+                padding-right: 10px;
+            }
+            &-link{
+                color: $site-btn;
+                &:hover{
+                    color: $site-color-hover;
+                }
+            }
+        }
+    }
+    .slick-prev:before, .slick-next:before{
+        color: $site-btn;
+    }
+    .slick-dots li button:before{
+        font-size: 8px;
+    }
+    .slick-dots li.slick-active button:before{
+        color: $site-color-hover;
+    }
+    .slick-dots li button:hover:before, 
+    .slick-dots li button:focus:before{
+        color: $site-color-hover;
+    }
+}

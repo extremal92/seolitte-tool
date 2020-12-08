@@ -75,7 +75,7 @@
 .report-info-block-schedule .schedule-item-status {
   font-size: 16px;
   font-weight: 500;
-  max-width: 78px;
+  max-width: 110px;
   width: 100%;
 }
 
@@ -131,5 +131,5 @@
 }
 
 .sidebar-list_item a:hover {
-  color: red;
+  color: #56ada1;
 }

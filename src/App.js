@@ -1,47 +1,66 @@
 import React from 'react';
 
 import {Header} from './components';
+import Breadcrumbs from './components/Breadcrumbs'
 import {Home, Tools, Price, Features, Company, 
   Resources, MetaTagsConstructor, SeoAudit, 
   CompetitiveAnalysis, SchemaBuilder, BrokenLinksFixer, 
   SitemapBuilder, ActivityReport, AboutUs,
   Contacts, SuccessStories, HelpCenter,
-  Blog, WhatsNew, Books} from './pages';
-import { Route, Link } from 'react-router-dom';
+  Blog, WhatsNew, Books, NotFound, Test} from './pages';
+
+import { Route, Router,useHistory, Switch } from 'react-router-dom';
+import { browserHistory } from "react-router";
+// import { Route, Link, Switch } from 'react-router-dom';
+// import routeConfig from './routeConfig'
+// import authHeader from './redux/auth-header';
+
 
 
 function App () {
 
+  const isLoggin = localStorage.getItem('user');
+  // console.log(authHeader)
+
   return(
-    <div className="wrapper">
-      <Header/>
-      <div className='content'>
-        <Route path="/" component={Home} exact  />
+    <div className="wrapper" id="App">
 
-        <Route path="/tools" component={Tools} exact />
-          <Route path="/meta-tags-constructor" component={MetaTagsConstructor} exact  />
-          <Route path="/seo-audit" component={SeoAudit} exact  />
-          <Route path="/competitive-analysis" component={CompetitiveAnalysis} exact  />
-          <Route path="/schema-builder" component={SchemaBuilder} exact  />
-          <Route path="/broken-links-fixer" component={BrokenLinksFixer} exact  />
-          <Route path="/sitemap-builder" component={SitemapBuilder} exact  />
-          <Route path="/seo-activity-report" component={ActivityReport} exact  />
+      <Header isLoggin={isLoggin}/>
+      <div className='content' id="page-wrap">
+        <Switch>
+          <Route path="/" component={Home} exact  />
+          {/* <Switch>
+            {routeConfig.map((route, i) => (
+              <Route key={route} {...route} />
+            ))}
+          </Switch> */}
 
-        <Route path="/price" component={Price} exact />
+          <Route path="/tools" component={Tools} exact />
+            <Route path="/tools/meta-tags-constructor" component={MetaTagsConstructor} exact />
+            <Route path="/tools/seo-audit" component={SeoAudit} exact  />
+            <Route path="/tools/competitive-analysis" component={CompetitiveAnalysis} exact  />
+            <Route path="/tools/schema-builder" component={SchemaBuilder} exact  />
+            <Route path="/tools/broken-links-fixer" component={BrokenLinksFixer} exact  />
+            <Route path="/tools/sitemap-builder" component={SitemapBuilder} exact  />
+            <Route path="/tools/seo-activity-report" component={ActivityReport} exact  />
 
-        <Route path="/features" component={Features} exact />
+          <Route path="/price" component={Price} exact />
 
-        <Route path="/company" component={Company} exact />
-          <Route path="/about-us" component={AboutUs} exact />
-          <Route path="/contacts" component={Contacts} exact />
-          <Route path="/success-stories" component={SuccessStories} exact />
+          <Route path="/features" component={Features} exact />
 
-        <Route path="/resources" component={Resources} exact />
-          <Route path="/help-center" component={HelpCenter} exact />
-          <Route path="/blog" component={Blog} exact />
-          <Route path="/whats-new" component={WhatsNew} exact />
-          <Route path="/e-books" component={Books} exact />
+          <Route path="/company" component={Company} exact />
+            <Route path="/company/about-us" component={AboutUs} exact />
+            <Route path="/company/contacts" component={Contacts} exact />
+            <Route path="/company/success-stories" component={SuccessStories} exact />
 
+          <Route path="/resources" component={Resources} exact />
+            <Route path="/resources/help-center" component={HelpCenter} exact />
+            <Route path="/resources/blog" component={Blog} exact />
+            <Route path="/resources/whats-new" component={WhatsNew} exact />
+            <Route path="/resources/e-books" component={Books} exact />
+          <Route path="/test-page" component={Test} exact />
+          <Route component={NotFound} />
+        </Switch>
       </div>
     </div>
   )

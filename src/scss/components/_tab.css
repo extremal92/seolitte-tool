@@ -1,0 +1,104 @@
+.offers {
+  padding-bottom: 40px;
+}
+
+.offers .tabs .tabs-titles {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+}
+
+.offers .tabs .tabs-titles .slick-slider {
+  width: 100%;
+}
+
+.offers .tabs .tabs-titles .tab-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-bottom: 3px solid transparent;
+  border-radius: 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+.offers .tabs .tabs-titles .tab-title .tab-title-img {
+  width: 100%;
+  height: 75px;
+}
+
+.offers .tabs .tabs-titles .tab-title .tab-title-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.offers .tabs .tabs-titles .tab-title span {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  padding: 10px 0;
+}
+
+@media (max-width: 991px) {
+  .offers .tabs .tabs-titles .tab-title span {
+    font-size: 16px;
+  }
+}
+
+.offers .tabs .tabs-titles .tab-title:hover {
+  border-bottom: 3px solid gray;
+}
+
+.offers .tabs .tabs-titles .tab-title--active {
+  border-bottom: 3px solid #5BACA2 !important;
+}
+
+.offers .tabs .tabs-titles .tab-title--active span {
+  color: #5BACA2;
+}
+
+.offers .tab-pane .offers-item__inner {
+  background-color: #f1f3f4;
+  margin-top: 25px;
+  border-radius: 8px;
+  padding: 40px;
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+  .offers .tab-pane .offers-item__inner {
+    flex-wrap: wrap;
+  }
+}
+
+.offers .tab-pane .offers-item__inner .offers-item__left,
+.offers .tab-pane .offers-item__inner .offers-item__img-wrap {
+  width: 50%;
+}
+
+@media (max-width: 991px) {
+  .offers .tab-pane .offers-item__inner .offers-item__left,
+  .offers .tab-pane .offers-item__inner .offers-item__img-wrap {
+    width: 100%;
+  }
+}
+
+.offers .tab-pane .offers-item__inner .offers-item__left .offers-item__text li {
+  padding: 10px 0;
+}
+
+.offers .tab-pane .offers-item__inner .offers-item__left .offers-item__text li i {
+  color: #52b94f;
+  margin-right: 5px;
+}
+
+.offers .tab-pane .offers-item__inner .offers-item__img-wrap .offers-item__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

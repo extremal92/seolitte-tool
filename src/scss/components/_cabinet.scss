@@ -1,0 +1,115 @@
+@import '../variables';
+
+.cabinet{
+    button{
+        width: 40px;
+        height: 40px;
+        font-size: 25px;
+        background: none;
+        border: none;
+        outline: none;
+        text-align: center;
+        transition: ease-in-out .3s;
+        cursor: pointer;
+        &:hover{
+            color: $site-color-hover;
+        }
+    }
+    #popup-root{
+        // .popup-overlay {
+        //     background-color: $site-overlay!important;
+        // }
+        .popup-arrow{
+            display: none;
+        }
+        svg{
+            display: none!important;
+        }
+        .popup-content{
+            // background-color: $white;
+            // top: 50%;
+            // left: 50%;
+            .popup-arrow{
+                display: none;
+            }
+        }
+    }
+
+}
+.jumbotron{
+    margin-bottom: 0;
+    @include md-min {    
+        padding: 30px 0 15px 0;
+    }
+}
+
+
+.Tabs {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.TabList {
+    width: 100%;
+    background: #263238;
+    display: flex;
+    @include sm-min {   
+        flex-wrap: wrap;
+    }
+    .Tab{
+        width: 50%;
+        min-width: 200px;
+        @include sm-min {   
+            width: 100%; 
+            min-width: 150px;
+        }
+        // @include md-min {   
+        //     width: 100%; 
+        //     min-width: 150px;
+        // }
+    }
+}
+
+.TabPanel {
+    flex: 1;
+    display: none;
+    padding: 1.5rem 2rem;
+    @include md-min {   
+        padding: 0;
+    }
+}
+.TabPanel.is-active {
+    display: block;
+}
+
+.Button {
+    display: inline-block;
+    width: 100%;
+    padding: 1rem 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+}
+.Button:focus,
+.Button:hover {
+    outline: 0;
+    background: #37474F;
+}
+.Tab.is-active .Button {
+    background: $site-color-hover;
+}
+.btn.btn-primary{
+    background: $site-color-hover;
+    border-color: $site-color-hover;
+}
+.login,
+.rigister{
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+}

@@ -1,11 +1,16 @@
+@import './mixins';
+
 $black: #232323;
 $white: #fff;
+$gray: #888;
 $gray-bg: #f1f3f4;
 $site-color: #232323;
+$site-text-black: #232323;
 $site-color-hover: #56ada1;
 $site-bg: #5BACA2;
 $site-btn: #224075;
 $site-btn2: #AC5C66;
+$site-overlay: rgba(0,0,0, 0.5);
 
 $site-ok: #52b94f;
 $site-middle: #f1b41c;
@@ -17,4 +22,15 @@ $site-bg-two: #092943;
 $header-text: rgba(255,255,255,.7);
 $header-text-hover: #56ada1;
 
+
+//bootstrap media
+// $xs-min: 320px;
+// $xs-max: 575px;
+// $sm-min: 576px;
+// $sm-max: 767px;
+// $md-min: 768px;
+// $md-max: 991px;
+// $lg-min: 992px;
+// $lg-max: 1199px;
+// $xl-min: 1200px;
 
