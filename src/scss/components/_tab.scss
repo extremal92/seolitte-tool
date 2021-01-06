@@ -51,6 +51,7 @@
         }
     }
     .tab-pane{
+        padding: 0;
         .offers-item__inner{
             background-color: $gray-bg;
             margin-top: 25px;
@@ -60,6 +61,7 @@
             display: flex;
             position: relative;
             justify-content: space-between;
+            width: 100%;
             @include lg-min {    
                 flex-wrap: wrap;
             }
@@ -83,6 +85,7 @@
             }
             .offers-item__img-wrap{
                 .offers-item__img{
+                    position: relative;
                     width: 100%;
                     height: 100%;
                     object-fit: contain;
