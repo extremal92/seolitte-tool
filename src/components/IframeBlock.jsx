@@ -16,7 +16,6 @@ function IframeBlock() {
                 <div className='video-iframe'>
                 <Iframe url="https://www.youtube.com/embed/R-XxAk8-OXY"
                     frameborder="0"
-                    // allow="accelerometer; autoPlay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen
                     className="video-iframe-item"/>
                 </div>

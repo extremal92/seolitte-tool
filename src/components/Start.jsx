@@ -72,15 +72,6 @@ function Start() {
                             className="form__item-input form__item-input--link"
                           />
                     </div>
-                    {/* <div className="form__item">
-                        <label htmlFor="platform" className="form__item-label"></label>
-                        <Field
-                          name="platform"
-                          placeholder=""
-                          type="text" 
-                          className="form__item-input"
-                        />
-                    </div> */}
                     <button type="submit" disabled={isSubmitting} className="form__item-btn">Search</button>
 
                   </Form>

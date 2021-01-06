@@ -11,16 +11,13 @@ import {Home, Tools, Price, Features, Company,
 
 import { Route, Router,useHistory, Switch } from 'react-router-dom';
 import { browserHistory } from "react-router";
-// import { Route, Link, Switch } from 'react-router-dom';
-// import routeConfig from './routeConfig'
-// import authHeader from './redux/auth-header';
+// NEW
 
 
 
 function App () {
 
   const isLoggin = localStorage.getItem('user');
-  // console.log(authHeader)
 
   return(
     <div className="wrapper" id="App">
@@ -29,11 +26,6 @@ function App () {
       <div className='content' id="page-wrap">
         <Switch>
           <Route path="/" component={Home} exact  />
-          {/* <Switch>
-            {routeConfig.map((route, i) => (
-              <Route key={route} {...route} />
-            ))}
-          </Switch> */}
 
           <Route path="/tools" component={Tools} exact />
             <Route path="/tools/meta-tags-constructor" component={MetaTagsConstructor} exact />

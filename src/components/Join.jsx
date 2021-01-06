@@ -19,15 +19,6 @@ function Join() {
                                 </span>
                             }
                         </VisibilitySensor>
-                        {/* <span className='join-text-number'>
-                        <CountUp end={123456} redraw={true} duration={6}>
-                            {({ countUpRef, start }) => (
-                                <VisibilitySensor onChange={start} delayedCall>
-                                    <span ref={countUpRef} />
-                                </VisibilitySensor>
-                            )}
-                        </CountUp>
-                        </span> */}
                         <span>professionals right now!</span>
                     </div>
                     </LightSpeed>

@@ -44,7 +44,6 @@ class CabinetPage extends React.Component {
                 }
                 <p>
                     <a onClick={this.props.logout}>Logout</a>
-                    {/* <Link to="/login">Logout</Link> */}
                 </p>
             </div>
         );

@@ -7,11 +7,6 @@ function Home() {
   return (
 
       <div className="home">
-        {/* <Join /> */}
-
-        {/* <div className='container'>
-
-        </div> */}
         <MetaTags 
           title={'SeoLitte Home'}
           description={'Seolitte Page Description Home'}

@@ -1,10 +1,8 @@
 import React, { Component }  from 'react';
-// import { Router, Route, Switch, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import { history } from '../redux';
 import { alertActions } from '../redux/actions';
-// import { PrivateRoute } from './PrivateRoute';
 import { CabinetPage } from '../pages/CabinetPage';
 import { LoginPage } from '../pages/LoginPage';
 import { RegisterPage } from '../pages/RegisterPage';
@@ -33,22 +31,11 @@ class CabinetLogin extends React.Component {
                         {alert.message &&
                             <div className={`alert ${alert.type}`}>{alert.message}</div>
                         }
-                            {/* { localStorage.getItem('user') ? <CabinetPage /> : null }   */}
                             { localStorage.getItem('user') ? 
                                 <CabinetPage closePopUp={closePopUp} /> 
                               : 
                                 <ModalTabs />
                             }  
-                            {/* { localStorage.getItem('user') ? 1 : 2 }   */}
-
-                        {/* <Router history={history}>
-                            <Switch>
-                                <PrivateRoute exact path="/" component={CabinetPage} />
-                                <Route path="/login" component={LoginPage} />
-                                <Route path="/register" component={RegisterPage} />
-                                <Redirect from="*" to="/" />
-                            </Switch>
-                        </Router> */}
                     </div>
                 </div>
             </div>
